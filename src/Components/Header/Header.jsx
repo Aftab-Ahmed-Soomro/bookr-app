@@ -9,9 +9,15 @@ const Header = () => {
     <header className="text-white py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
+        <div className='flex items-center gap-2'>
         <Link to="/" className="text-2xl font-bold">
-          <img className="w-[120px] h-[40px]" src="/Assets/imgs/logo.png" alt="Logo" />
+          <img className="w-[35px] h-[30px]" src="/Assets/imgs/callIcon2.png" alt="Logo" />
         </Link>
+        <h1 className='text-3xl font-extrabold'>
+          BOOKR
+        </h1>
+        </div>
+        
 
         {/* Mobile Menu Button */}
         <button
