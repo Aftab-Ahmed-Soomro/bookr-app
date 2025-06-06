@@ -9,14 +9,12 @@ const Header = () => {
     <header className="text-white py-2 sm:py-4 relative">
       <div className="container mx-auto px-3 sm:px-4 flex justify-between items-center">
         {/* Logo */}
-        <div className='flex items-center gap-1 sm:gap-2'>
-          <Link to="/" className="text-xl sm:text-2xl font-bold">
+          <Link to="/" className="text-xl sm:text-2xl font-bold flex gap-2 items-center">
             <img className="w-[28px] h-[24px] sm:w-[35px] sm:h-[30px]" src="/Assets/imgs/callIcon2.png" alt="Logo" />
+            <h1 className='text-2xl sm:text-3xl font-extrabold pointer'>
+              BOOKR
+            </h1>
           </Link>
-          <h1 className='text-2xl sm:text-3xl font-extrabold'>
-            BOOKR
-          </h1>
-        </div>
 
         {/* Mobile Menu Button */}
         <button
