@@ -8,16 +8,16 @@ const Section = ({
 }) => {
   return (
     <section className={`
-      py-12 md:py-20 px-4 md:px-50 
+      py-12 md:py-20 px-4 md:px-8
       ${backgroundColor}
       ${roundedTop ? 'rounded-t-[50px] md:rounded-t-[101px]' : ''}
       ${className}
     `}>
-      <div className="container mx-auto">
+      <div className="container max-w-screen-lg mx-auto">
         {children}
       </div>
     </section>
   );
 };
 
-export default Section; 
+export default Section;   

@@ -78,11 +78,11 @@ const PractitionersPage = () => {
           
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 text-[#09307D]">
           {/* First row - small card */}
-          <div className="bg-white rounded-2xl p-6 pt-12 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
             <h3 className="text-lg font-bold mb-3 leading-tight text-[#09307D]">
               {cards[0].title}
             </h3>
-            <p className="text-[#747070] text-sm leading-relaxed">
+            <p className="text-[#747070] text-xs leading-relaxed">
               {cards[0].description}
             </p>
           </div>
@@ -90,11 +90,11 @@ const PractitionersPage = () => {
           {/* Second row - large card */}
           <div className="col-span-1 md:col-span-2 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 pt-12">
+              <div className="p-6">
                 <h3 className="text-lg font-bold text-[#09307D] mb-3 leading-tight">
                   {cards[1].title}
                 </h3>
-                <p className="text-[#747070] text-sm leading-relaxed">
+                <p className="text-[#747070] text-xs leading-relaxed">
                   {cards[1].description}
                 </p>
               </div>
@@ -108,11 +108,11 @@ const PractitionersPage = () => {
           {/* Third row - large card */}
           <div className="col-span-1 md:col-span-2 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="p-6 pt-12">
+              <div className="p-6">
                 <h3 className="text-lg font-bold text-[#09307D] mb-3 leading-tight">
                   {cards[2].title}
                 </h3>
-                <p className="text-[#747070] text-sm leading-relaxed">
+                <p className="text-[#747070] text-xs leading-relaxed">
                   {cards[2].description}
                 </p>
               </div>
@@ -124,11 +124,11 @@ const PractitionersPage = () => {
           </div>
 
           {/* Fourth row - small card */}
-          <div className="bg-white rounded-2xl p-6 pt-12 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
             <h3 className="text-lg font-bold text-[#09307D] mb-3 leading-tight">
               {cards[3].title}
             </h3>
-            <p className="text-[#747070] text-sm leading-relaxed">
+            <p className="text-[#747070] text-xs leading-relaxed">
               {cards[3].description}
             </p>
           </div>
@@ -140,7 +140,7 @@ const PractitionersPage = () => {
                 <h3 className="text-lg font-bold text-[#09307D] mb-3 leading-tight">
                   {cards[4].title}
                 </h3>
-                <p className="text-[#747070] text-sm leading-relaxed">
+                <p className="text-[#747070] text-xs leading-relaxed">
                   {cards[4].description}
                 </p>
               </div>
@@ -161,19 +161,19 @@ const PractitionersPage = () => {
       
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center py-12 md:py-20 px-4 md:px-50 bg-[#fff] rounded-t-[50px] md:rounded-t-[101px]">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-4 md:space-y-6 lg:pr-8">
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 md:mb-6">
                 Key Features
               </h2>
               
-              <div className="space-y-4">
+              <div className="space-y-2 md:space-y-3">
                 {features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3 group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div key={index} className="flex items-start gap-2 group hover:transform hover:translate-x-2 transition-all duration-300">
                     <div className="flex-shrink-0 mt-1">
-                      <img className="w-[20px] h-[20px]" src="/Assets/imgs/secureIcon.png" alt="" />
+                      <img className="w-[16px] h-[16px]" src="/Assets/imgs/secureIcon.png" alt="" />
                     </div>
-                    <p className="text-[#747070] text-base md:text-lg leading-relaxed group-hover:text-gray-800 transition-colors">
+                    <p className="text-[#747070] text-sm md:text-base leading-relaxed group-hover:text-gray-800 transition-colors">
                       {feature}
                     </p>
                   </div>
@@ -182,10 +182,10 @@ const PractitionersPage = () => {
             </div>
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-col gap-4">
-              <button className="group text-[#09307D] bg-white border-2 border-[#09307D] px-6 py-3 w-[230px]  rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2">
+            <div className="flex flex-col sm:flex-col gap-3">
+              <button className="group text-[#09307D] bg-white border-2 border-[#09307D] px-4 py-2 w-[200px] text-sm rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2">
                 Request A Demo
-                <img className="w-[25px] sm:w-[35px] h-[26px] sm:h-[36px] rotate-[51.01deg]" src="/Assets/imgs/lookup.png" alt="" />
+                <img className="w-[20px] sm:w-[25px] h-[20px] sm:h-[25px] rotate-[51.01deg]" src="/Assets/imgs/lookup.png" alt="" />
               </button>
 
               <PrimaryButton text="See Our Practitioner Plans & Get Started Free" />
@@ -194,42 +194,42 @@ const PractitionersPage = () => {
           </div>
           
           {/* Right Visual */}
-          <div className="relative order-first lg:order-last">
-            <div className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 rounded-3xl p-8 md:p-12 overflow-hidden shadow-2xl">
+          <div className="relative order-first lg:order-last lg:pl-8">
+            <div className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 rounded-2xl p-4 md:p-8 overflow-hidden shadow-xl">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-10 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                <div className="absolute top-20 right-16 w-1 h-1 bg-white rounded-full animate-pulse delay-300"></div>
-                <div className="absolute bottom-20 left-16 w-1.5 h-1.5 bg-blue-300 rounded-full animate-pulse delay-700"></div>
-                <div className="absolute top-32 left-1/3 w-1 h-1 bg-white rounded-full animate-pulse delay-1000"></div>
-                <div className="absolute bottom-32 right-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-500"></div>
+                <div className="absolute top-8 left-8 w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
+                <div className="absolute top-16 right-12 w-1 h-1 bg-white rounded-full animate-pulse delay-300"></div>
+                <div className="absolute bottom-16 left-12 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-700"></div>
+                <div className="absolute top-24 left-1/3 w-1 h-1 bg-white rounded-full animate-pulse delay-1000"></div>
+                <div className="absolute bottom-24 right-8 w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-500"></div>
               </div>
               
               {/* Network lines */}
               <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 400 300">
-                <line x1="50" y1="60" x2="150" y2="120" stroke="#60a5fa" strokeWidth="1" className="animate-pulse" />
-                <line x1="150" y1="120" x2="250" y2="80" stroke="#60a5fa" strokeWidth="1" className="animate-pulse delay-300" />
-                <line x1="250" y1="80" x2="350" y2="140" stroke="#60a5fa" strokeWidth="1" className="animate-pulse delay-700" />
-                <line x1="80" y1="200" x2="180" y2="160" stroke="#60a5fa" strokeWidth="1" className="animate-pulse delay-1000" />
-                <line x1="180" y1="160" x2="320" y2="200" stroke="#60a5fa" strokeWidth="1" className="animate-pulse delay-500" />
+                <line x1="50" y1="60" x2="150" y2="120" stroke="#60a5fa" strokeWidth="0.5" className="animate-pulse" />
+                <line x1="150" y1="120" x2="250" y2="80" stroke="#60a5fa" strokeWidth="0.5" className="animate-pulse delay-300" />
+                <line x1="250" y1="80" x2="350" y2="140" stroke="#60a5fa" strokeWidth="0.5" className="animate-pulse delay-700" />
+                <line x1="80" y1="200" x2="180" y2="160" stroke="#60a5fa" strokeWidth="0.5" className="animate-pulse delay-1000" />
+                <line x1="180" y1="160" x2="320" y2="200" stroke="#60a5fa" strokeWidth="0.5" className="animate-pulse delay-500" />
               </svg>
               
               {/* Central shield */}
-              <div className="relative z-10 flex items-center justify-center h-48 md:h-64">
+              <div className="relative z-10 flex items-center justify-center h-36 md:h-48">
                 <div className="relative">
                   {/* Glow effect */}
-                  <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-30 animate-pulse scale-150"></div>
+                  <div className="absolute inset-0 bg-blue-500 rounded-full blur-lg opacity-30 animate-pulse scale-150"></div>
                   
                   {/* Shield container */}
-                  <div className="relative bg-gradient-to-br from-blue-400 to-blue-600 p-6 rounded-2xl shadow-2xl">
-                    <Shield className="w-16 h-16 md:w-20 md:h-20 text-white" strokeWidth={1.5} />
+                  <div className="relative bg-gradient-to-br from-blue-400 to-blue-600 p-4 rounded-xl shadow-xl">
+                    <Shield className="w-12 h-12 md:w-16 md:h-16 text-white" strokeWidth={1.5} />
                     
                     {/* Lock icon overlay */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white bg-opacity-20 rounded-lg p-2 mt-2">
-                        <div className="w-4 h-3 border-2 border-white rounded-sm"></div>
-                        <div className="w-6 h-4 bg-white bg-opacity-60 rounded-b-md mt-0.5"></div>
-                        <div className="w-1 h-1 bg-white rounded-full mx-auto mt-1"></div>
+                      <div className="bg-white bg-opacity-20 rounded p-1.5 mt-2">
+                        <div className="w-3 h-2 border-2 border-white rounded-sm"></div>
+                        <div className="w-4 h-3 bg-white bg-opacity-60 rounded-b-md mt-0.5"></div>
+                        <div className="w-0.5 h-0.5 bg-white rounded-full mx-auto mt-0.5"></div>
                       </div>
                     </div>
                   </div>
@@ -237,22 +237,22 @@ const PractitionersPage = () => {
               </div>
               
               {/* Floating elements */}
-              <div className="absolute top-8 right-8 bg-white bg-opacity-10 rounded-lg p-2 backdrop-blur-sm animate-float">
-                <div className="w-3 h-3 bg-blue-400 rounded"></div>
+              <div className="absolute top-6 right-6 bg-white bg-opacity-10 rounded p-1.5 backdrop-blur-sm animate-float">
+                <div className="w-2 h-2 bg-blue-400 rounded"></div>
               </div>
               
-              <div className="absolute bottom-8 left-8 bg-white bg-opacity-10 rounded-lg p-2 backdrop-blur-sm animate-bounce">
-                <div className="w-4 h-2 bg-blue-300 rounded"></div>
+              <div className="absolute bottom-6 left-6 bg-white bg-opacity-10 rounded p-1.5 backdrop-blur-sm animate-bounce">
+                <div className="w-3 h-1.5 bg-blue-300 rounded"></div>
               </div>
               
-              <div className="absolute top-1/4 left-6 bg-white bg-opacity-10 rounded-lg p-1 backdrop-blur-sm">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
+              <div className="absolute top-1/4 left-4 bg-white bg-opacity-10 rounded p-1 backdrop-blur-sm">
+                <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
               </div>
             </div>
           </div>
       </div>
       </div>
-    </div>
+      </div>
   );
 };
 

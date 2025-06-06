@@ -7,18 +7,18 @@ const FeatureCards = ({
   className = ""
 }) => {
   return (
-    <div className={`p-6 rounded-lg w-[250px] ${className}`}>
+    <div className={`p-4 rounded-lg w-[200px] ${className}`}>
       {/* Icon Container */}
-      <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4 p-2 shadow-md">
-        <img src={image} alt="Feature Icon" className="w-[60px] h-[50px]" />
+      <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-3 p-2 shadow-md">
+        <img src={image} alt="Feature Icon" className="w-[40px] h-[40px]" />
       </div>
       
       {/* Content */}
       <div>
-        <h3 className="text-lg font-semibold text-[#09307D] mb-2">
+        <h3 className="text-base font-semibold text-[#09307D] mb-1">
           {title}
         </h3>
-        <p className="text-sm text-[#747070] leading-relaxed">
+        <p className="text-xs text-[#747070] leading-relaxed">
           {description}
         </p>
       </div>

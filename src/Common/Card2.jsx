@@ -30,6 +30,7 @@ const Card2 = ({
               className='w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] lg:w-[20px] lg:h-[20px]' 
             />
           </div>
+          {/* para */}
           <p className={`font-light text-xs sm:text-sm lg:text-[15px] ${designationColor}`}>
             {designation}
           </p>

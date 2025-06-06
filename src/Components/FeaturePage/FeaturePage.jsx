@@ -27,8 +27,8 @@ const FeaturePage = () => {
 
       {/* Features Section */}
       <div className="bg-[#09307D]">
-      <section className="py-12 md:py-20 px-4 md:px-50 bg-white rounded-t-[50px] md:rounded-t-[101px]">
-        <div className="container mx-auto">
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-white rounded-t-[50px] md:rounded-t-[101px]">
+        <div className="container max-w-screen-lg mx-auto">
           <SectionHeader title="Streamline Your Practice, Maximize Your Potential" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 mb-28">
@@ -50,17 +50,17 @@ const FeaturePage = () => {
             <Card
               image={"/Assets/imgs/folder.png"}
               title="Client Management (CRM)"
-              description="Keep all your client information organized. View appointment history,manage notes, and communicate securely through the platform.le by day, week, or month. Our intuitive interface makes scheduling and rescheduling a breeze."
+              description="Keep all your client information organized. View appointment history, manage notes, and communicate securely through the platform."
             />
             <Card
               image={"/Assets/imgs/notebook.png"}
               title="Stripe Connect Payment Integration"
-              description="Securely accept payments foryour services directly through Booked. Offer pre-payment options and manage transactions with ease."
+              description="Securely accept payments for your services directly through Booked. Offer pre-payment options and manage transactions with ease."
             />
             <Card
               image={"/Assets/imgs/scan.png"}
               title="Client Subscription Management"
-              description="Create and manage recurring subscriptionplans for your clients (e.g., wellness packages, monthly retainers) to build loyalty and predictable revenue."
+              description="Create and manage recurring subscription plans for your clients (e.g., wellness packages, monthly retainers) to build loyalty and predictable revenue."
             />
             <Card
               image={"/Assets/imgs/mind.png"}
@@ -86,10 +86,10 @@ const FeaturePage = () => {
       <div className="bg-white">
 
       
-      <section className="py-12 md:py-20 px-4 md:px-50 bg-[url('/Assets/imgs/trustedBg.png')] bg-cover bg-[center_23%] rounded-t-[50px] md:rounded-t-[101px] bg-no-repeat bg-opacity-[20%]" style={{
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-[url('/Assets/imgs/trustedBg.png')] bg-cover bg-[center_23%] rounded-t-[50px] md:rounded-t-[101px] bg-no-repeat bg-opacity-[20%]" style={{
         backgroundSize: '200% auto',
       }}>
-        <div className="container mx-auto">
+        <div className="container max-w-screen-lg mx-auto">
           <SectionHeader title="Your Appointments, Your Way" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 mt-20">

@@ -16,18 +16,18 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="text-white pt-20">
         <div className="container mx-auto px-4 flex justify-center items-center flex-col">
-          <h1 className="text-center px-4 font-outfit font-bold text-2xl sm:text-3xl md:text-4xl line-height-[122%] tracking-[-0.06em] mb-4">
+          <h1 className="text-center px-4 font-outfit font-bold text-xl sm:text-2xl md:text-3xl line-height-[122%] tracking-[-0.06em] mb-3">
             Effortless Scheduling, Smarter Practice. Welcome to Booked
           </h1>
-          <p className="w-full md:w-[787px] px-4 text-center font-outfit font-normal text-base sm:text-lg md:text-xl line-height-[122%] mb-8">
+          <p className="w-full md:w-[600px] px-4 text-center font-outfit font-normal text-sm sm:text-base md:text-lg line-height-[122%] mb-6">
             The AI-powered platform that revolutionizes how practitioners
             connect with clients and manage their appointments. Spend less time
             on admin, more time on what you do best
           </p>
-          <div className="mt-6 md:mt-10 px-4">
+          <div className="mt-4 md:mt-8 px-4">
             {/* hero gif */}
             <img
-              className="rounded-t-[20px] w-full max-w-[870px] h-auto"
+              className="rounded-t-[16px] w-full max-w-[700px] h-auto"
               src="/Assets/imgs/bgGif.gif"
               alt="Dashboard Preview"
             />
@@ -38,10 +38,10 @@ const HomePage = () => {
 
       {/* Features Section */}
       <Section>
-        <div className="bg-white border-[#D0E8FF] mb-20">
-          <div className="absolute border-[3px] border-[#D0E8FF] rounded-[13px] top-205 left-1/2 -translate-x-1/2 max-w-[800px] w-[90%] flex flex-col sm:flex-row gap-4 justify-center items-center px-4 py-4 bg-white">
+        <div className="relative -mt-16 sm:-mt-20 md:-mt-24 mb-16">
+          <div className="border-[2px] border-[#D0E8FF] rounded-[10px] mx-auto max-w-[640px] w-[90%] flex flex-col sm:flex-row gap-3 justify-center items-center px-3 py-3 bg-white shadow-lg">
             <PrimaryButton text="Get Started Free" />
-            <button className="w-full sm:w-auto bg-white hover:bg-gray-50 text-blue-700 px-4 sm:px-6 py-3 rounded-full font-medium border-2 border-blue-700 transition-colors duration-200 shadow-md">
+            <button className="w-full sm:w-auto bg-white hover:bg-gray-50 text-blue-700 px-3 sm:px-4 py-2 rounded-full text-sm font-medium border-2 border-blue-700 transition-colors duration-200 shadow-md">
               Find Your Practitioner
             </button>
           </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
         
         <SectionHeader title="Reclaim Your Time, Grow Your Practice" />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-3">
           <Card
             image={"/Assets/imgs/calculator.png"}
             title="Smart Scheduling"
@@ -67,13 +67,13 @@ const HomePage = () => {
           />
         </div>
         
-        <div className="mt-8 md:mt-12 flex justify-center md:justify-start px-4 mb-20">
+        <div className="mt-6 md:mt-8 flex justify-center md:justify-start px-3 mb-16">
           <PrimaryButton text="Learn More About Practitioner Features" />
         </div>
 
         <SectionHeader title="Booking Made Simple, Anytime, Anywhere" />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-3">
           <Card
             image={"/Assets/imgs/mobile.png"}
             title="Easy Appointment Booking"
@@ -91,7 +91,7 @@ const HomePage = () => {
           />
         </div>
         
-        <div className="mt-8 md:mt-12 flex justify-center md:justify-end px-4">
+        <div className="mt-6 md:mt-8 flex justify-center md:justify-end px-3">
           <PrimaryButton text="Download the Client App" />
         </div>
       </Section>
@@ -101,10 +101,10 @@ const HomePage = () => {
         <Section backgroundColor="bg-[#DBE3E9]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="px-4">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-[#09307D]">
+              <h2 className="text-xl md:text-3xl font-bold mb-3 md:mb-4 text-[#09307D]">
                 The Magic of AI Booking
               </h2>
-              <p className="text-base md:text-xl mb-6 md:mb-8 text-[#747070]">
+              <p className="text-sm md:text-lg mb-4 md:mb-6 text-[#747070]">
                 Can't find your practitioner on Booked? No problem! Our
                 innovative AI assistant can call their office on your behalf,
                 using your preferences to find and book an appointment for
@@ -116,7 +116,7 @@ const HomePage = () => {
               <img
                 src="/Assets/imgs/AI.gif"
                 alt="AI Booking"
-                className="rounded-[30px] md:rounded-[25px] shadow-xl w-full h-auto"
+                className="rounded-[24px] md:rounded-[20px] shadow-xl w-full h-auto"
               />
             </div>
           </div>
@@ -172,8 +172,8 @@ const HomePage = () => {
         </Section>
       </div>
 
-      <div className="bg-[#F2F6FF] flex flex-col md:flex-row justify-between items-center py-8 md:py-10 px-4 md:px-40 gap-6">
-        <h1 className="font-bold text-2xl md:text-3xl text-[#09307D] text-center md:text-left">
+      <div className="bg-[#F2F6FF] flex flex-col md:flex-row justify-between items-center py-6 md:py-8 px-3 md:px-32 gap-4">
+        <h1 className="font-bold text-xl md:text-2xl text-[#09307D] text-center md:text-left">
           Ready to Transform Your Scheduling?
         </h1>
         <PrimaryButton text="See How It Works" />
